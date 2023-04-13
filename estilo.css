@@ -15,8 +15,9 @@ h2 {
 figure {
     text-align: center;
     background-color: whitesmoke;
-    color: lightgrey;
+    color: gray;
     padding: 15px;
+    margin: 30px;
 }
 figcaption {
     padding-top: 10px;
