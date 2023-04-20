@@ -1,5 +1,9 @@
+p {
+    text-align: justify;
+    text-decoration: none;
+}
 body {
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
     width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -21,4 +25,16 @@ figure {
 }
 figcaption {
     padding-top: 10px;
+}
+.matriz-musicdot {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.familia-tupfeln {
+    width: 275px;
+    float: right;
+}
+figure img {
+    width: 100%;
 }
