@@ -13,9 +13,9 @@ h1 {
     background-color: #E1EDF2;
     padding: 10px;
 }
-h2 {
+/*h2 {
     border-bottom: 1px solid black;
-}
+}*/
 figure {
     text-align: center;
     background-color: whitesmoke;
@@ -37,4 +37,16 @@ figcaption {
 }
 figure img {
     width: 100%;
+}
+.historia {
+    border-bottom: 1px solid black;
+}
+.diferenciais {
+    border-bottom: 1px solid black;
+}
+.contato {
+    color: #3D3D3D;
+    background-color: #E1EDF2;
+    padding: 10px;
+    font-size: xx-large;
 }
