@@ -11,15 +11,23 @@
         <h1>
             Entre em contato
         </h1>
-        <form action="contato.html" method="post">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <label for="name">Nome</label>
-            <input type="tel" name="fone" placeholder="(xx)xxxxx-xxxx" required>
-            <label for="name">Fone</label>
-            <input type="e-mail" name="e-mail" placeholder="fulano@email.com" required>
-            <label for="name">E-mail</label>
-            <textarea name="opnião" id="opnião" placeholder="Deixe a sua opnião"></textarea><br>
-            <input type="button" value="Enviar"></imput>
+        <form name="form" action="contato.html" method="post">
+            <div>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required="required">
+                <label for="nome">Nome</label>
+            </div>
+            <div>
+                <input type="tel" id="fone" name="fone" placeholder="(xx)xxxxx-xxxx" required="required">
+                <label for="fone">Fone</label>
+            </div>
+            <div>
+                <input type="email" id="email"name="email" placeholder="fulano@email.com" required="required">
+                <label for="email">E-mail</label>
+            </div>
+            <div>
+                <textarea name="opnião" id="opnião" placeholder="Deixe a sua opnião" required="required"></textarea><br>
+                <input type="submit" value="Enviar"></imput>
+            </div>
         </form>
     </body>
 </html>
