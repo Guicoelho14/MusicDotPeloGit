@@ -25,9 +25,39 @@
                 <label for="email">E-mail</label>
             </div>
             <div>
-                <textarea name="opnião" id="opnião" placeholder="Deixe a sua opnião" required="required"></textarea><br>
-                <input type="submit" value="Enviar"></imput>
+                <textarea name="opiniao" id="opiniao" placeholder="Deixe a sua opinião" required="required"></textarea><br>
+                <input type="submit" value="Enviar" onclick="verificar()"></imput>
             </div>
         </form>
+        <script type="text/javascript">
+            //<![CDATA[[
+            function verificar() {
+                var nome = document.getElementById("nome");
+                if(nome.value.length < 10) {
+                    alert("Digite um nome de pelo menos 10 caracteres");
+                    nome.focus();
+                    return;
+                }
+                var fone = document.getElementById("fone");
+                if(fone.value.length != 11) {
+                    alert("Digite um telefone com 11 caracteres. Somente números.");
+                    fone.focus();
+                    return;
+                }
+                var email = document.getElementById("email");
+                if(email.value == /\S+@\S+\.\S+/) {
+                    alert("Digite um e-mail.");
+                    email.focus();
+                    return;
+                }
+                var opiniao = document.getElementById ("opiniao");
+                if (opiniao.value.length < 10 || opiniao.value.length > 50) {
+                    alert ("Digite uma opinião com no mínimo 10 caracteres e máximo de 50 caracteres.");
+                    opiniao.focus();
+                    return;
+                }
+            }
+            //]]>
+        </script>
     </body>
 </html>
